@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Git For Everything, Except Microsoft Word Documents"
+title: "Git For Everything Except Microsoft Word Documents"
 date: 2020-05-12
 ---
 
