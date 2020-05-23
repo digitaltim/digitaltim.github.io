@@ -7,7 +7,7 @@ date: 2020-05-22
 Vue is a progressive web framework for building user interfaces. Meaning that it can be incorporated into a project incrementally. This is because the core library focusses on the view layer whereas adding additional tooling/libraries turns it into a more fully featured framework.
 
 ## Declarative Rendering[^1]
-Calling a function to change a DOM element is imperative rendering. In Vue you declare how an element is derived from state and props, thus declarative rendering[^2]. One of the ways to do this is with template syntax which links the data variables defined in Vue to the placeholders in the template. Using `{{ <variable name> }}` causes text interpolation[^3]. Using the `v-bind:` directive allows binding values to an element's attributes. The `v-` prefix indicates a Vue directive. 
+Calling a function to change a DOM element is imperative rendering. In Vue you declare how an element is derived from state and props, thus declarative rendering[^2]. One of the ways to do this is with template syntax which links the data variables defined in Vue to the placeholders in the template. Using {% raw %} `{{ <variable name> }}` {% endraw %} causes text interpolation[^3]. Using the `v-bind:` directive allows binding values to an element's attributes. The `v-` prefix indicates a Vue directive. 
 
 ## Conditionals and Loops[^4]
 Vue uses the conditional directive `v-if` to bind data to the structure of the DOM. The `v-for` directive can be used to iterate through a data source declared in Vue.
@@ -21,9 +21,12 @@ Applications can be abstracted and broken down into smaller chunks called compon
 ## Wrapping Up
 The concepts presented are simple on the surface and easily understandable. Yet taking this patterns and applying it to my project still is somewhat elusive. I'll need to start small and iterate to reinforce the basics and manage the inevitable complexity to come.
 
+**Note**: I had to modify this post to properly display curly braces.[^7]
+
 [^1]: [Vue Declarative Rendering](https://vuejs.org/v2/guide/index.html#Declarative-Rendering)
 [^2]: [The philosophy of React: Declarative rendering](https://fjorgedigital.com/insights/blog/the-philosophy-of-react-declarative-rendering/)
 [^3]: [String interpolation](https://en.wikipedia.org/wiki/String_interpolation)
 [^4]: [Vue Conditionals and Loops](https://vuejs.org/v2/guide/index.html#Conditionals-and-Loops)
 [^5]: [Vue Handling User Input](https://vuejs.org/v2/guide/index.html#Handling-User-Input)
 [^6]: [Vue Composing with Components](https://vuejs.org/v2/guide/index.html#Composing-with-Components)
+[^7]: [Escaping double curly braces inside a markdown code block in Jekyll](https://stackoverflow.com/questions/24102498/escaping-double-curly-braces-inside-a-markdown-code-block-in-jekyll)
