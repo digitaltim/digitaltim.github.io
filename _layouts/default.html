@@ -4,27 +4,45 @@
 		<meta charset="utf-8">
 		<title>{{ page.title }}</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
 	</head>
 	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
+		<header id="main-header">
+			<div class="container">
+				<h1>Digital Tim</h1>
+			</div>
+		</header>
+		<nav id="navbar">
+			<div class="container">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/cv">CV</a></li>
+					<li><a href="/blog">Blog</a></li>
+				</ul>
+			</div>
 		</nav>
+		<section id="showcase">
+			<div class="container">
+				<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, iure ipsam numquam exercitationem cum facilis veniam</h1>
+			</div>
+		</section>
 		<div class="container">
-      
-      {{ content }}
+			<section id="main">
+				
+				{{ content }}
 
-    </div><!-- /.container -->
-		<footer>
+			</section>
+			<aside id="sidebar">
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+			</aside>
+		</div><!-- /.container -->
+		<footer id="main-footer">
     		<ul>
         		<li><a href="mailto:tim@digitaltim.com">email</a></li>
         		<li><a href="https://github.com/digitaltim">github.com/digitaltim</a></li>
 			</ul>
+			<p>Copyright &copy; 2020 Digital Tim</p>
 		</footer>
 	</body>
 </html>
